@@ -22,7 +22,7 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(
             font-bold
             hover:opacity-75
             transition
-                `,
+            `,
           className
         )}
         disabled={disabled}

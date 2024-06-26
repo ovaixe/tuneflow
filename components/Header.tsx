@@ -17,7 +17,7 @@ const Header: React.FC<HeaderProps> = ({ children, className }) => {
   const router = useRouter();
 
   const handleLogout = () => {
-    // Handle logout in th future
+    // Handle logout in the future
   };
 
   return (
@@ -51,14 +51,14 @@ const Header: React.FC<HeaderProps> = ({ children, className }) => {
           <button
             onClick={() => router.back()}
             className="
-          rounded-full
-          bg-black
-          flex
-          items-center
-          justify-center
-          hover:opacity-75
-          transition
-          "
+              rounded-full
+              bg-black
+              flex
+              items-center
+              justify-center
+              hover:opacity-75
+              transition
+            "
           >
             <RxCaretLeft className="text-white" size={35} />
           </button>
@@ -66,14 +66,14 @@ const Header: React.FC<HeaderProps> = ({ children, className }) => {
           <button
             onClick={() => router.forward()}
             className="
-          rounded-full
-          bg-black
-          flex
-          items-center
-          justify-center
-          hover:opacity-75
-          transition
-          "
+              rounded-full
+              bg-black
+              flex
+              items-center
+              justify-center
+              hover:opacity-75
+              transition
+            "
           >
             <RxCaretRight className="text-white" size={35} />
           </button>
@@ -81,38 +81,38 @@ const Header: React.FC<HeaderProps> = ({ children, className }) => {
 
         <div
           className="
-              flex
-              md:hidden
-              gap-x-2
-              items-center
-              "
+            flex
+            md:hidden
+            gap-x-2
+            items-center
+          "
         >
           <button
             className="
-          rounded-full
-          p-2
-          bg-white
-          flex
-          items-center
-          justify-center
-          hover:opacity-75
-          transition
-          "
+              rounded-full
+              p-2
+              bg-white
+              flex
+              items-center
+              justify-center
+              hover:opacity-75
+              transition
+            "
           >
             <HiHome className="text-black" size={20} />
           </button>
 
           <button
             className="
-          rounded-full
-          p-2
-          bg-white
-          flex
-          items-center
-          justify-center
-          hover:opacity-75
-          transition
-          "
+              rounded-full
+              p-2
+              bg-white
+              flex
+              items-center
+              justify-center
+              hover:opacity-75
+              transition
+            "
           >
             <BiSearch className="text-black" size={20} />
           </button>
@@ -120,21 +120,21 @@ const Header: React.FC<HeaderProps> = ({ children, className }) => {
 
         <div
           className="
-              flex
-              justify-between
-              items-center
-              gap-x-4
-              "
+            flex
+            justify-between
+            items-center
+            gap-x-4
+          "
         >
           <>
             <div>
               <Button
                 onClick={() => {}}
                 className="
-              bg-transparent
-              text-neutral-300
-              font-medium
-              "
+                  bg-transparent
+                  text-neutral-300
+                  font-medium
+                "
               >
                 Sign up
               </Button>
@@ -144,10 +144,10 @@ const Header: React.FC<HeaderProps> = ({ children, className }) => {
               <Button
                 onClick={() => {}}
                 className="
-              bg-white
-              px-6
-              py-2
-u              "
+                bg-white
+                  px-6
+                  py-2
+                "
               >
                 Log in
               </Button>
