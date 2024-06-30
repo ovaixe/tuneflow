@@ -7,11 +7,11 @@ import { RxCaretLeft, RxCaretRight } from "react-icons/rx";
 import { twMerge } from "tailwind-merge";
 import { useSupabaseClient } from "@supabase/auth-helpers-react";
 import { toast } from "react-hot-toast";
+import { FaUserAlt } from "react-icons/fa";
 
 import Button from "./Button";
 import useAuthModal from "@/hooks/useAuthModal";
 import { useUser } from "@/hooks/useUser";
-import { FaUserAlt } from "react-icons/fa";
 
 interface HeaderProps {
   children: React.ReactNode;
@@ -105,6 +105,7 @@ const Header: React.FC<HeaderProps> = ({ children, className }) => {
           "
         >
           <button
+            onClick={() => router.replace("/")}
             className="
               rounded-full
               p-2
@@ -120,6 +121,7 @@ const Header: React.FC<HeaderProps> = ({ children, className }) => {
           </button>
 
           <button
+            onClick={() => router.push("/search")}
             className="
               rounded-full
               p-2

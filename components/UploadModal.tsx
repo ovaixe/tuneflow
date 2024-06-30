@@ -53,7 +53,7 @@ const UploadModal = () => {
       // Upload song
       const { data: songData, error: songError } = await supabaseClent.storage
         .from("songs")
-        .upload(`song-${values.title}-${uniqid}`, songFile, {
+        .upload(`song-${values.title}-${uniqueId}`, songFile, {
           cacheControl: "3600",
           upsert: true,
         });
@@ -66,7 +66,7 @@ const UploadModal = () => {
       // Upload image
       const { data: imageData, error: imageError } = await supabaseClent.storage
         .from("images")
-        .upload(`image-${values.title}-${uniqid}`, imageFile, {
+        .upload(`image-${values.title}-${uniqueId}`, imageFile, {
           cacheControl: "3600",
           upsert: true,
         });
