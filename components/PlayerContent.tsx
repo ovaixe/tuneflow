@@ -7,10 +7,12 @@ import { HiSpeakerWave, HiSpeakerXMark } from "react-icons/hi2";
 import useSound from "use-sound";
 
 import { Song } from "@/types";
+
+import usePlayer from "@/hooks/usePlayer";
+
 import MediaItem from "./MediaItem";
 import LikeButton from "./LikeButton";
 import Slider from "./Slider";
-import usePlayer from "@/hooks/usePlayer";
 
 interface PlayerContentProps {
   song: Song;
@@ -91,11 +93,7 @@ const PlayerContent: React.FC<PlayerContentProps> = ({ song, songUrl }) => {
   };
 
   return (
-    <div
-      className="
-        grid grid-cols-2 md:grid-cols-3 h-full
-    "
-    >
+    <div className="grid grid-cols-2 md:grid-cols-3 items-center h-full px-2 py-2">
       <div
         className="
         flex
@@ -103,7 +101,7 @@ const PlayerContent: React.FC<PlayerContentProps> = ({ song, songUrl }) => {
         justify-start
       "
       >
-        <div className="flex items-center gap-x-4">
+        <div className="flex items-center justify-center gap-x-4">
           <MediaItem data={song} />
           <LikeButton songId={song.id} />
         </div>
@@ -159,6 +157,7 @@ const PlayerContent: React.FC<PlayerContentProps> = ({ song, songUrl }) => {
             transition
         "
         />
+
         <div
           onClick={handlePlay}
           className="

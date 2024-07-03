@@ -2,13 +2,15 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { Figtree } from "next/font/google";
 
-import Sidebar from "@/components/Sidebar";
-import SupabseProvider from "@/providers/SupabaseProvider";
 import UserProvider from "@/providers/UserProvider";
 import ModalProvider from "@/providers/ModalProvider";
 import ToasterProvider from "@/providers/ToasterProvider";
+import SupabseProvider from "@/providers/SupabaseProvider";
+
 import getSongsByUserId from "@/actions/getSongsByUserId";
+
 import Player from "@/components/Player";
+import Sidebar from "@/components/Sidebar";
 
 const font = Figtree({ subsets: ["latin"] });
 
@@ -17,7 +19,7 @@ export const metadata: Metadata = {
   description: "Listen to music!",
 };
 
-const revalidate = 0;
+export const revalidate = 0;
 
 export default async function RootLayout({
   children,
