@@ -55,7 +55,7 @@ const Header: React.FC<HeaderProps> = ({ children, className }) => {
           mb-4
           flex
           items-center
-          justify-end
+          justify-between
           "
       >
         <div
@@ -97,15 +97,15 @@ const Header: React.FC<HeaderProps> = ({ children, className }) => {
           </button>
         </div>
 
-        {/* <div
+        <div
           className="
             flex
             md:hidden
             items-center
           "
         >
-          <h1 className="text-2xl font-bold">Home</h1>
-        </div> */}
+          <h1 className="text-2xl font-black text-green-100">TuneFlow</h1>
+        </div>
 
         <div
           className="

@@ -1,14 +1,14 @@
 "use client";
 
-import { usePathname, useRouter } from "next/navigation";
+import { usePathname } from "next/navigation";
 import { useMemo } from "react";
 import { BiSearch } from "react-icons/bi";
 import { HiHome } from "react-icons/hi2";
 import { TbPlaylist } from "react-icons/tb";
+
 import MenubarItem from "./MenubarItem";
 
 const Menubar = () => {
-  const router = useRouter();
   const pathname = usePathname();
 
   const routes = useMemo(

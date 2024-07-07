@@ -1,6 +1,6 @@
 import Link from "next/link";
-import { IconType } from "react-icons";
 import { twMerge } from "tailwind-merge";
+import { IconType } from "react-icons";
 
 interface MenubarItemProps {
   icon: IconType;
